@@ -4,7 +4,16 @@ import Post from './post';
 import {feedMock} from './mock'
 
 const FeedMock = styled.div`
-  
+  padding: 5px;
+  & > div {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 5px;
+    & > div {
+      margin-bottom: 5px;
+    }
+  }
 `
 
 const Feed = () => {
